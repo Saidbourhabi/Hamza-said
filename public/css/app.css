@@ -84,4 +84,14 @@ button{
     color: white;
     font-weight: 300;
 }
+.sponsored{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.company-logos{
+    width: 30px;
+}
 
