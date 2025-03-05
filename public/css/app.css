@@ -384,6 +384,24 @@ footer{
         display: none;
     }
 
+    .infos-title>p{
+        text-align: center;
+    }
+
+    .infos-top , .infos-bottom{
+        flex-direction: column;
+        gap: 2vw;
+        padding: 2vh;
+    }
+
+    .infos-top>img , .infos-bottom>img{
+        width: 50vw;
+
+    }
+    .infos-top-content , .infos-top-content{
+        text-align: center;
+    }
+
 
 
 
