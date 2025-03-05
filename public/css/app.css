@@ -305,8 +305,10 @@ footer{
     header {
         width: 100%;
     }
-
-
+    .head-content{
+        padding-inline: 1rem;
+        justify-content: space-between;
+    }
 
     .sponsored {
         gap: 3rem;
@@ -354,20 +356,26 @@ footer{
     }
 
     .links {
-        background: black;
-        color: white;
+        background: #fff;
+        color: #000;
         position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+        top: 0;
         width: 100%;
         right: -200%;
         height: 100vh;
         transition: 0.5s;
+        gap: 2rem;
+    }
+    .links > a{
+        color: black;
     }
 
-    .open,
+
+    .open ,
     .close {
         display: block;
     }
@@ -382,10 +390,6 @@ footer{
 
     #menu:checked~.close {
         display: block;
-    }
-
-    .button-link {
-        display: none;
     }
 
     .infos-title>p{
@@ -439,8 +443,4 @@ footer{
         flex-direction: column;
         gap: 3vw;
     }
-
-
-
-
 }
