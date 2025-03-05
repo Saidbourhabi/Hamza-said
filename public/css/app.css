@@ -199,6 +199,40 @@ button {
     box-shadow: 1px 1px;
 }
 
+.experience{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.exp-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 3vh 0;
+}
+
+.exp-top>h2 , .exp-top>p , .percentage>h1 , .percentage>p{
+    color: white;
+}
+
+.exp-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+
+}
+.percentage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 /* phone respo */
