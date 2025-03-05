@@ -311,8 +311,12 @@ footer{
     .sponsored {
         gap: 3rem;
         width: 90%;
-        overflow-x: scroll;        
+        overflow-x: scroll; 
+               
     }
+    .sponsored::-webkit-scrollbar {
+        display: none;
+      }
 
     .home-logo {
         display: flex;
@@ -400,6 +404,40 @@ footer{
     }
     .infos-top-content , .infos-top-content{
         text-align: center;
+    }
+
+    .exp-top{
+        text-align: center;
+    }
+
+    .why-choose-us{
+
+        flex-direction: column-reverse;
+    }
+    .why-choose-us>img{
+        width: 50vw;
+    }
+
+    .newsletter{
+        text-align: center;
+        gap: 2vw;
+    }
+    .newsletter>input{
+        width: 90vw;
+        
+    }
+
+    .newsletter>input::placeholder{
+        text-align: center;
+    }
+
+    .newsletter>button{
+        width: 90vw;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 3vw;
     }
 
 
