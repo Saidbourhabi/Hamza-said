@@ -263,6 +263,25 @@ button {
     justify-content: center;
 }
 
+.newsletter{
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+.newsletter>h2{
+    font-size: 30px;
+}
+.newsletter>input{
+    width: 30vw;
+    padding: 1vh;
+    border-radius: 10px;
+}
+.newsletter>button{
+    color: white;
+    padding: 1vh 2vw;
+}
 /* phone respo */
 
 @media (max-width: 480px) {
