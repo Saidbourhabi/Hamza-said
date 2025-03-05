@@ -3,13 +3,8 @@ margin :0;
 padding:0;
 text-decoration: none;
 color: black;
-font-family: "electro";
 }
 
-@font-face {
-    font-family: "electro" ;
-    src: url(../fonts/Ethnocentric\ Rg.otf);
-}
 
 body{
     width: 100%;
@@ -134,4 +129,93 @@ button{
 }
 .img-service{
     width: 100px;
+}
+
+#menu{
+    display: none;
+}
+.open , .close{
+    display: none;
+}
+
+
+
+/* phone respo */
+
+@media (max-width:425px) {
+    *{
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    .home-img{
+        width: 50px;
+    }
+    .home-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 100;
+    }
+    .discription{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        overflow: x;
+    }
+    .services-skils{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        /* gap: 2rem; */
+        font-size: x-small;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-service{
+        width: 30px;
+    }
+   
+    .links{
+        background: black;
+        color: white;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        right:-200%;
+        height: 100vh;
+        transition: 0.5s;
+    }
+    .open , .close{
+        display: block;
+    }
+   
+    #menu:checked ~ .links{
+        right: 0;
+    }
+    #menu:checked ~ .open{
+        display: none;
+    }
+    #menu:checked ~ .close{
+        display: block;
+    }
+
+    .button-link{
+        display: none;
+    }
+
+    
+
+
 }
