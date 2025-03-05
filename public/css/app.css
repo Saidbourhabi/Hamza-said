@@ -3,8 +3,13 @@
     padding: 0;
     text-decoration: none;
     color: black;
+    font-family: "eco";
 }
 
+@font-face {
+    font-family: "eco";
+    src: url(../fonts/Ethnocentric\ Rg.otf);
+}
 
 body {
     width: 100%;
@@ -163,7 +168,7 @@ button {
     display: none;
 }
 
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,14 +177,16 @@ button {
 }
 
 
-.infos-title{
+.infos-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vw;
 
 }
-.infos-top , .infos-bottom{
+
+.infos-top,
+.infos-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,19 +194,20 @@ button {
 
 }
 
-.infos-top>img , .infos-bottom>img{
+.infos-top>img,
+.infos-bottom>img {
     width: 25vw;
 
 }
 
-.infos-top-content{
+.infos-top-content {
     border: 1px solid black;
     padding: 3vw;
     border-radius: 10px;
     box-shadow: 1px 1px;
 }
 
-.experience{
+.experience {
     width: 100%;
     height: 40vh;
     background-color: black;
@@ -209,7 +217,7 @@ button {
     justify-content: center;
 }
 
-.exp-top{
+.exp-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,78 +225,88 @@ button {
     padding: 3vh 0;
 }
 
-.exp-top>h2 , .exp-top>p , .percentage>h1 , .percentage>p{
+.exp-top>h2,
+.exp-top>p,
+.percentage>h1,
+.percentage>p {
     color: white;
 }
 
-.exp-bottom{
+.exp-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10vw;
 
 }
-.percentage{
+
+.percentage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.experience>a{
+.experience>a {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.why-choose-us{
+
+.why-choose-us {
     padding: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.why-choose-us>img{
+.why-choose-us>img {
     width: 25vw;
 }
 
-.left-choose{
+.left-choose {
     gap: 2vw;
     display: flex;
     flex-direction: column;
 }
-.left-choose>div{
+
+.left-choose>div {
     align-items: start;
     gap: 1vw;
     display: flex;
     justify-content: center;
 }
 
-.newsletter{
+.newsletter {
     padding: 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vw;
 }
-.newsletter>h2{
+
+.newsletter>h2 {
     font-size: 30px;
 }
-.newsletter>input{
+
+.newsletter>input {
     width: 30vw;
     padding: 1vh;
     border-radius: 10px;
 }
-.newsletter>button{
+
+.newsletter>button {
     color: white;
     padding: 1vh 2vw;
 }
 
-footer{
+footer {
     padding: 5vh 1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 /* phone respo */
 
 @media (max-width: 480px) {
@@ -305,7 +323,8 @@ footer{
     header {
         width: 100%;
     }
-    .head-content{
+
+    .head-content {
         padding-inline: 1rem;
         justify-content: space-between;
     }
@@ -313,12 +332,13 @@ footer{
     .sponsored {
         gap: 3rem;
         width: 90%;
-        overflow-x: scroll; 
-               
+        overflow-x: scroll;
+
     }
+
     .sponsored::-webkit-scrollbar {
         display: none;
-      }
+    }
 
     .home-logo {
         display: flex;
@@ -335,7 +355,8 @@ footer{
         padding: 5vh 0;
         /* overflow: x; */
     }
-    .discription>p{
+
+    .discription>p {
         width: 90%;
     }
 
@@ -370,12 +391,13 @@ footer{
         transition: 0.5s;
         gap: 2rem;
     }
-    .links > a{
+
+    .links>a {
         color: black;
     }
 
 
-    .open ,
+    .open,
     .close {
         display: block;
     }
@@ -392,54 +414,70 @@ footer{
         display: block;
     }
 
-    .infos-title>p{
+    .infos-title>p {
         text-align: center;
     }
 
-    .infos-top , .infos-bottom{
+    .infos-top,
+    .infos-bottom {
         flex-direction: column;
         gap: 2vw;
         padding: 2vh;
     }
 
-    .infos-top>img , .infos-bottom>img{
+    .infos-top>img,
+    .infos-bottom>img {
         width: 50vw;
 
     }
-    .infos-top-content , .infos-top-content{
+
+    .infos-top-content,
+    .infos-top-content {
         text-align: center;
     }
 
-    .exp-top{
+    /* edit ny said  */
+
+    .experience{
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        gap: 3vw;
+        justify-content: center;
+    }
+
+    .exp-top {
         text-align: center;
     }
 
-    .why-choose-us{
+    .why-choose-us {
 
         flex-direction: column-reverse;
     }
-    .why-choose-us>img{
+
+    .why-choose-us>img {
         width: 50vw;
     }
 
-    .newsletter{
+    .newsletter {
         text-align: center;
         gap: 2vw;
     }
-    .newsletter>input{
+
+    .newsletter>input {
         width: 90vw;
-        
+
     }
 
-    .newsletter>input::placeholder{
+    .newsletter>input::placeholder {
         text-align: center;
     }
 
-    .newsletter>button{
+    .newsletter>button {
         width: 90vw;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         gap: 3vw;
     }
