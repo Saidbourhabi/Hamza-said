@@ -206,6 +206,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 3vw;
+    justify-content: center;
 }
 
 .exp-top{
@@ -233,7 +234,34 @@ button {
     align-items: center;
 }
 
+.experience>a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-choose-us{
+    padding: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.why-choose-us>img{
+    width: 25vw;
+}
+
+.left-choose{
+    gap: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+.left-choose>div{
+    align-items: start;
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+}
 
 /* phone respo */
 
