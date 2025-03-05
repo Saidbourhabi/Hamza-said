@@ -109,7 +109,6 @@ button {
 
 #services {
     width: 100%;
-    height: 100vh;
 }
 
 .services-content {
@@ -162,6 +161,42 @@ button {
 .open,
 .close {
     display: none;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3vw;
+
+}
+
+
+.infos-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+
+}
+.infos-top , .infos-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+
+}
+
+.infos-top>img , .infos-bottom>img{
+    width: 25vw;
+
+}
+
+.infos-top-content{
+    border: 1px solid black;
+    padding: 3vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px;
 }
 
 
