@@ -282,6 +282,13 @@ button {
     color: white;
     padding: 1vh 2vw;
 }
+
+footer{
+    padding: 5vh 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /* phone respo */
 
 @media (max-width: 480px) {
